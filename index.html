@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .lexend {
+      font-family: "Lexend", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    .btn-bg {
+      background-color: #B4F461;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .title {
+      font-size: larger;
+      font-weight: 900;
+    }
+
+    .description {
+      color: rgb(108, 108, 108);
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body class="lexend">
+  <header>
+    <nav class="sm:px-10 lg:px-28 py-5 bg-[#fff7ea]">
+      <div class="navbar">
+        <div class="navbar-start">
+          <button class="btn btn-bg"><a href="blog.html">Blog</a></button>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl"><img src="assets/logo.png" alt="">Donate Bangladesh</a>
+        </div>
+        <div class="navbar-end">
+          <a class="btn"><img src="assets/coin.png" alt="">
+            <div id="my-account-balance">5500 BDT</div>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="sm:px-10 lg:px-48 ">
+    <div class="flex justify-center gap-5">
+      <a class="btn btn-bg">Donation</a>
+      <a class="btn">History</a>
+    </div>
+    <div class="card md:card-side py-10 ">
+      <figure>
+        <img src="assets/noakhali.png" alt="" />
+      </figure>
+      <div class="card-body">
+        <button class="btn w-1/4">
+          <img src="assets/coin.png" alt="">
+          <div id="account-balance">0 BDT</div>
+        </button>
+        <h2 class="title">Donate for Flood at Noakhali, Bangladesh</h2>
+        <p class="description"> The recent floods in Noakhali have caused significant damage to <br> homes
+          infrastructure. Your donation will help provide essential <br> supplies and to those affected by this
+          disaster. Every contribution, <br> big or small, makes difference. Please join us in supporting the relief
+          <br> efforts and making a positive impact on the lives of those in need.
+        </p>
+        <div><input id="input-add-money" type="text" placeholder="Write Donation Amount"
+            class="input input-bordered w-full " /></div>
+        <div class="card-actions justify-center">
+          <button id="btn-add-money" class="btn btn-bg w-full font-bold" onclick="my_modal_1.showModal()"> Donate
+            Now</button>
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box card w-1/2 shadow-xl">
+              <div class="card-body items-center text-center">
+                <h2 class="card-title text-5xl font-bold">Congrates!</h2>
+                <p><img src="assets/coin.png" alt=""></p>
+                <p class="description">You have donated for humankind</p>
+                <p class="title">Successfully</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn btn-primary">close confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card md:card-side py-10">
+      <figure>
+        <img src="assets/feni.png" alt="" />
+      </figure>
+      <div class="card-body">
+        <button class="btn w-1/4">
+          <img src="assets/coin.png" alt="">
+          <div id="account-balance">0 BDT</div>
+        </button>
+        <h2 class="title">Donate for Flood Relief in Feni,Bangladesh</h2>
+        <p class="description">The recent floods in Feni have devastated local communities, leading <br> to severe
+          disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water,
+          and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and
+          help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real
+          difference. Please <br> consider donating today to assist those in urgent need.</p>
+        <div><input id="input-add-money" type="text" placeholder="Write Donation Amount"
+            class="input input-bordered w-full " /></div>
+
+            <div class="card-actions justify-center">
+              <button id="btn-add-money" class="btn btn-bg w-full font-bold" onclick="my_modal_1.showModal()"> Donate
+                Now</button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box card w-1/2 shadow-xl">
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-5xl font-bold">Congrates!</h2>
+                    <p><img src="assets/coin.png" alt=""></p>
+                    <p class="description">You have donated for humankind</p>
+                    <p class="title">Successfully</p>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <button class="btn btn-primary">close confirmation</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="card md:card-side py-10">
+      <figure>
+        <img src="assets/quota-protest.png" alt="" />
+      </figure>
+      <div class="card-body">
+        <button class="btn w-1/4">
+          <img src="assets/coin.png" alt="">
+          <div id="account-balance">0 BDT</div>
+        </button>
+        <h2 class="title">Aid for Injured in the Quota Movement</h2>
+        <p class="description">The recent Quota movement has resulted in numerous injuries and <br> significant hardship
+          for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and
+          necessary supplies <br> to those affected. By contributing, you help ensure that injured <br>individuals
+          receive the care and support they need during this <br> challenging time. Every donation plays a vital role in
+          alleviating their <br> suffering and aiding in their recovery. Please consider making a <br> donation to
+          support these brave individuals in their time of need.</p>
+        <div><input id="input-add-money" type="text" placeholder="Write Donation Amount"
+            class="input input-bordered w-full " /></div>
+            <div class="card-actions justify-center">
+              <button id="btn-add-money" class="btn btn-bg w-full font-bold" onclick="my_modal_1.showModal()"> Donate
+                Now</button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box card w-1/2 shadow-xl">
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title text-5xl font-bold">Congrates!</h2>
+                    <p><img src="assets/coin.png" alt=""></p>
+                    <p class="description">You have donated for humankind</p>
+                    <p class="title">Successfully</p>
+                    <div class="modal-action">
+                      <form method="dialog">
+                        <button class="btn btn-primary">close confirmation</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </main>
+  <script src="addMoney.js"></script>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
